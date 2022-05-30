@@ -32,7 +32,7 @@ import time
 # PLR models take the form
 #
 # .. math::
-#      Y=D \theta\theta_{0}+g_{0}(X)+U, & \quad\mathbb{E}(U \mid X, D)=0,\\
+#      Y=D \theta_{0}+g_{0}(X)+U, & \quad\mathbb{E}(U \mid X, D)=0,\\
 #      D=m_{0}(X)+V, & \quad\mathbb{E}(V \mid X)=0,
 #
 # where :math:`Y` is the outcome variable, :math:`D` is the policy/treatment variable. :math:`\theta_0` is the main
@@ -181,10 +181,7 @@ plt.legend(loc="upper left")
 # :math:`\theta_0`. But the running time of abess learner is much shorter than lasso. Besides, in high-dimensional
 # situations, the mean absolute bias of abess learner regression is relatively smaller.
 
-
-###############################################################################
-# References
-# ^^^^^^^^^^^^^^^^^
+# %%
 # .. rubric:: References
 # .. [1] Chernozhukov V, Chetverikov D, Demirer M, et al. Double/debiased machine learning for treatment and structural parameters[M]. Oxford University Press Oxford, UK, 2018.
 # .. [2] Bach P, Chernozhukov V, Kurz M S, et al. Doubleml-an object-oriented implementation of double machine learning in python[J]. Journal of Machine Learning Research, 2022, 23(53): 1-6.
